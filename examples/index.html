@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>awesome icons on maptalks</title>
+  <style type="text/css">
+    html,body{margin:0px;height:100%;width:100%}
+    .container{width:100%;height:100%}
+  
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.38.2/dist/maptalks.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/maptalks@0.38.2/dist/maptalks.min.js"></script>
+
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../dist/maptalks-awesome-marker.css">
+  <script type="text/javascript" src="../dist/maptalks-awesome-marker.js"></script>
+
+  <body>
+
+    <div id="map" class="container"></div>
+    <script>
+
+      var map = new maptalks.Map('map', {
+        center: [-0.113049,51.49856],
+        zoom: 13,
+        baseLayer: new maptalks.TileLayer('base', {
+          urlTemplate: 'http://www.google.cn/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4i256!2m3!1e0!2sm!3i342009817!3m9!2sen-US!3sCN!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&token=32965',
+          subdomains: ['a','b','c','d'],
+          attribution: '&copy; Google Maps'
+        })
+      });
+
+
+      var marker = new maptalks.AwesomeMarker([-0.113049,51.49856], {
+        icon:'twitter',
+        markerColor:'red',
+        iconColor: '#f28f82',
+        // autoPan:true,
+        // eventsToStop:true
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.123049,51.49856], {
+        icon:'coffee',
+        markerColor:'darkred',
+        iconColor: '#f28f82',
+      
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.133049,51.49856], {
+        icon:'cog',
+        markerColor:'lightred',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+      var marker = new maptalks.AwesomeMarker([-0.143049,51.49856], {
+        icon:'qq',
+        markerColor:'orange',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+      var marker = new maptalks.AwesomeMarker([-0.153049,51.49856], {
+        icon:'google-plus',
+        markerColor:'beige',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+      var marker = new maptalks.AwesomeMarker([-0.163049,51.49856], {
+        icon:'weixin',
+        markerColor:'green',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.173049,51.49856], {
+        icon:'spinner',
+        markerColor:'purple',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.183049,51.49856], {
+        icon:'glass',
+        markerColor:'darkgreen',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.193049,51.49856], {
+        icon:'shopping-cart',
+        markerColor:'lightgreen',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      
+      var marker = new maptalks.AwesomeMarker([-0.193049,51.48856], {
+        icon:'info',
+        markerColor:'blue',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.193049,51.47856], {
+        icon:'group',
+        markerColor:'darkblue',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+
+      var marker = new maptalks.AwesomeMarker([-0.183049,51.47856], {
+        icon:'phone',
+        markerColor:'lightblue',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.173049,51.47856], {
+        icon:'ambulance',
+        markerColor:'darkpurple',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.163049,51.47856], {
+        icon:'medkit',
+        markerColor:'pink',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.153049,51.47856], {
+        icon:'skype',
+        markerColor:'cadetblue',
+        // iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.143049,51.47856], {
+        icon:'weibo',
+        markerColor:'white',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.133049,51.47856], {
+        icon:'facebook',
+        markerColor:'gray',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.123049,51.47856], {
+        icon:'weibo',
+        markerColor:'lightgray',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      var marker = new maptalks.AwesomeMarker([-0.113049,51.47856], {
+        icon:'weibo',
+        markerColor:'black',
+        iconColor: 'red'
+      });
+      marker.addTo(map).show();
+
+
+      marker.on('click',function(e){
+          console.log(e)
+      })
+      
+
+    </script>
+  </body>
+</html>
