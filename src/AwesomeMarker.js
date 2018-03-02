@@ -1,6 +1,8 @@
-import  {ui} from 'maptalks';
+// import  {ui} from 'maptalks';
+if(!window.maptalks) throw new Error("not find maptalks lib")
 
-const UIMarker=ui.UIMarker;
+const UIMarker=window.maptalks.ui.UIMarker;
+
 
 class AwesomeMarker extends UIMarker{
     
