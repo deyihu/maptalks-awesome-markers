@@ -1,4 +1,8 @@
 
-import  "./src/AwesomeMarker"
+import AwesomeMarker from "./src/AwesomeMarker";
+
+export {
+    AwesomeMarker
+}
 
 

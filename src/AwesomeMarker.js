@@ -1,30 +1,25 @@
 // import  {ui} from 'maptalks';
-if(!window.maptalks) throw new Error("not find maptalks lib")
+import * as maptalks from 'maptalks';
 
-const UIMarker=window.maptalks.ui.UIMarker;
+const UIMarker = maptalks.ui.UIMarker;
 
+class AwesomeMarker extends UIMarker {
 
-class AwesomeMarker extends UIMarker{
-    
-
-    constructor(coordinate, options){
-        super(coordinate,options);
+    constructor(coordinate, options) {
+        super(coordinate, options);
         this._wrapContext();
     }
 
-    _wrapContext(){
-        let icon=this.options.icon;
-        let markerColor=this.options.markerColor||'red';
-        let iconColor=this.options.iconColor||'white';
+    _wrapContext() {
+        const icon = this.options.icon;
+        const markerColor = this.options.markerColor || 'red';
+        const iconColor = this.options.iconColor || 'white';
 
-        let divContext=`<div class="awesome-marker-icon-${markerColor} awesome-marker">#</div>`;
-        let iContext=`<i class=" fa fa-${icon}" style="color:${iconColor}"></i>`
-        this.options.content=divContext.replace("#",iContext);
+        const divContext = `<div class="awesome-marker-icon-${markerColor} awesome-marker">#</div>`;
+        const iContext = `<i class=" fa fa-${icon}" style="color:${iconColor}"></i>`;
+        this.options.content = divContext.replace('#', iContext);
 
     }
 
 }
-
-if(window.maptalks){
-    window.maptalks.AwesomeMarker=AwesomeMarker;
-}
+export default AwesomeMarker;
